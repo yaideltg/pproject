@@ -12,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Say Hello Step 1
-      - run: echo "Hello there!"
+        run: echo "Hello there!"
