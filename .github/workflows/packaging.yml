@@ -1,3 +1,5 @@
+# The packaging workflow
+
 name: Automatically Packaging the PProject package.
 
 on:
