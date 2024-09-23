@@ -82,6 +82,7 @@ legacy_tox_ini = """
     envlist =
             py312
             py311
+            py310
 
     [testimports]
     deps =
