@@ -1,0 +1,13 @@
+name: Automatically Packaging the PProject package.
+
+on:
+  - push
+
+jobs:
+  say-hello:
+    name: Say Hello Job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Say Hello Step 1
+      - run: echo "Hello there!"
