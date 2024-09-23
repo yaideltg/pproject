@@ -95,14 +95,14 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          path: dist/*.tar.gz
+          path: ./dist/*.tar.gz
 
   build_wheels:
     name: Build wheels on ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest, windows-latest, macos-13]
 
     steps:
       - uses: actions/checkout@v3
@@ -119,4 +119,4 @@ jobs:
 
       - uses: actions/upload-artifact@v3
         with:
-          path: wheels/*.whl
+          path: ./wheels/*.whl
